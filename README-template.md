@@ -33,7 +33,9 @@ _README under construction_
 ### Requirements to Run
 <!-- #### C#
 * _.NET Core_
-* _Command Prompt_ -->
+* _ASP.NET Core MVC_
+* _Command Prompt_
+* _Web Browser_ -->
 
 <!-- #### Javascript
 * _Web Browser_
@@ -49,7 +51,9 @@ _README under construction_
 1. Download and install .NET Core from the [official website](https://dotnet.microsoft.com/download/dotnet-core/)
 2. Clone the [repository](https://github.com/TSiu88/csharp-bakery.git) from my [GitHub page](https://github.com/TSiu88)
 3. Use a command line interface to move to the repository's directory with `cd project-directory`
-4. Run `dotnet run` to start up the program in the command line interface  -->
+4. Run `dotnet restore` and `dotnet build` in command line interface of the repository's directory
+5. Run `dotnet run` to start up the program in the command line interface
+6. Type the URL listed under "Now listening on:" into a web browser  -->
 
 <!-- 1. Download and install Node.js from the [official website](https://nodejs.org/en/download/)
 2. Clone the [repository](https://github.com/TSiu88/beep-boop.git) from my [GitHub page](https://github.com/TSiu88)
@@ -65,6 +69,7 @@ _README under construction_
 <!-- #### C#
 * _C#_
 * _MSTest_
+* _Razor_
 * _Markdown_ -->
 
 <!-- #### Javascript
