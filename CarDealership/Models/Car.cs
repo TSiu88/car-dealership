@@ -1,6 +1,6 @@
 using System;
 
-namespace ProjectName.Models
+namespace CarDealership.Models
 {
   public class Item
   {

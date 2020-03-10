@@ -1,9 +1,9 @@
 using System;
 using System.IO;
 using Microsoft.AspNetCore.Hosting;
-using ProjectName.Models;
+using CarDealership.Models;
 
-namespace ProjectName
+namespace CarDealership
 {
   class Program
   {
