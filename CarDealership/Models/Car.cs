@@ -2,12 +2,18 @@ using System;
 
 namespace CarDealership.Models
 {
-  public class Item
+  public class Car
   {
-    public string Property { get; set; }
-    public Item(string property)
+    public string Description { get; set; }
+    public string MakeModel { get; set; }
+    public int Price { get; set; }
+    public int Miles { get; set; }
+    public Car(string description, string makeModel, int price, int miles)
     {
-      Property = property;
+      Description = description;
+      MakeModel = makeModel;
+      Price = price;
+      Miles = miles;
     }
   }
 }
