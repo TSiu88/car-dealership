@@ -14,13 +14,13 @@ namespace CarDealership.Controllers
       return View(allCars);
     }
 
-    [HttpPost("/search")]
+    [HttpGet("/search")]
     public ActionResult Search()
     {
       return View();
     }
 
-    [HttpPost("/add")]
+    [HttpGet("/add")]
     public ActionResult Add(string description, string makeModel, int price, int miles)
     {
       Car newCar = new Car(description, makeModel, price, miles);
@@ -40,5 +40,6 @@ namespace CarDealership.Controllers
       }
       return View(CarsMatchingSearch);
     }
+
   }
 }
