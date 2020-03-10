@@ -1,4 +1,3 @@
-using System;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -12,8 +11,8 @@ namespace CarDealership
     public Startup(IHostingEnvironment env)
     {
       var builder = new ConfigurationBuilder()
-          .SetBasePath(env.ContentRootPath)
-          .AddEnvironmentVariables();
+        .SetBasePath(env.ContentRootPath)
+        .AddEnvironmentVariables();
       Configuration = builder.Build();
     }
 
@@ -26,6 +25,8 @@ namespace CarDealership
 
     public void Configure(IApplicationBuilder app)
     {
+      app.UseDeveloperExceptionPage();
+
       app.UseMvc(routes =>
       {
         routes.MapRoute(
@@ -33,9 +34,9 @@ namespace CarDealership
           template: "{controller=Home}/{action=Index}/{id?}");
       });
 
-      app.Run(async (context) =>
+      app.Run(async(context) =>
       {
-        await context.Response.WriteAsync("Hello World!");
+        await context.Response.WriteAsync("Something went wrong!");
       });
     }
   }

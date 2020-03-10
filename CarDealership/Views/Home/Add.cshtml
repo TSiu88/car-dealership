@@ -1,0 +1,28 @@
+@{
+  Layout = "_Layout";
+}
+@using CarDealership.Models
+<div class="container">
+  <h1>Add a car for sale</h1>
+    <form action="/add" method="post">
+      <div class="form-group">
+        <label for="makeModel">Enter your car's make and model.</label>
+        <input id="makeModel" name="makeModel" type="text">
+      </div>
+      <div class="form-group">
+        <label for="description">Enter your car's description.</label>
+        <input id="description" name="description" type="text">
+      </div>
+      <div class="form-group">
+        <label for="price">Enter your car's price.</label>
+        <input id="price" name="price" type="text">
+      </div>
+      <div class="form-group">
+        <label for="miles">Enter your car's miles.</label>
+        <input id="miles" name="miles" type="text">
+      </div>
+      <button type="submit">Add your car!</button>
+    </form>
+
+  <a href="/">Return to Listings</a>
+</div>
