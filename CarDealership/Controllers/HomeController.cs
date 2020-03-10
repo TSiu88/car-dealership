@@ -21,13 +21,19 @@ namespace CarDealership.Controllers
     }
 
     [HttpGet("/add")]
+    public ActionResult Add()
+    {
+      return View();
+    }
+
+    [HttpPost("/add")]
     public ActionResult Add(string description, string makeModel, int price, int miles)
     {
       Car newCar = new Car(description, makeModel, price, miles);
       return RedirectToAction("Index");
     }
 
-    [HttpGet("/results")]
+    [HttpPost("/results")]
     public ActionResult Results(string maxPrice, string maxMiles)
     {
       List<Car> CarsMatchingSearch = new List<Car>(0);
